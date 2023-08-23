@@ -1,0 +1,22 @@
+{
+  "name": "grammaranalyzer",
+  "version": "1.0.0",
+  "description": "This repository houses an algorithm developed with the purpose of studying formal languages. Built based on Chomsky Normal Form, the algorithm was designed to facilitate the analysis and validation of grammars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaorodriguesz/GrammarAnalyzer.git"
+  },
+  "author": "joao paulo m rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaorodriguesz/GrammarAnalyzer/issues"
+  },
+  "homepage": "https://github.com/joaorodriguesz/GrammarAnalyzer#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
