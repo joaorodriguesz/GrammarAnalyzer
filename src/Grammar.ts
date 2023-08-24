@@ -15,7 +15,7 @@ export class Grammar {
         this.productions.get(nonTerminal)?.push(...expansions);
     }
 
-    derive(startSymbol: string) {
+    derive(startSymbol: string): string {
         let output: string = "";
         let startOptions: string[] = this.productions.get(startSymbol);
         let startOption: string = startOptions[Math.floor(Math.random() * startOptions.length)];
@@ -35,5 +35,6 @@ export class Grammar {
         }
 
         console.log(output);
+        return output;
     }
 }
