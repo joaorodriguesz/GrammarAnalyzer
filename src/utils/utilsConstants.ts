@@ -27,5 +27,5 @@ export const UTILS = {
             "Y",
             "Z"
         ]
-    } 
+    }
 }
