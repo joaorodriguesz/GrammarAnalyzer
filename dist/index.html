@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container p-2">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-3">
+              <img width="60" src="./img/logo.gif" alt="" />
+            </div>
+            <div
+              class="col-sm-6 d-flex justify-content-center align-items-center"
+            >
+              <h5>Grammar Analyze</h5>
+            </div>
+            <div class="vol-3"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <i class="text-center">
+              <p>
+                <b>RULE:</b> Escreva no seguinte formato:( <b>S</b>:= options |
+                options ... ; <b>A</b>:= options | options ... ; )
+              </p>
+              <p><b>[ S ]:</b> O ponto incial.</p>
+              <p><b>[ | ]:</b> A condição "ou".</p>
+              <p>
+                <b>[ options ]:</b> O conjunto de terminais e não terminais.
+              </p>
+              <p>
+                <b>[ S ]:</b> Um não terminal representado por qualquer letra
+                maiuscula do alfabeto menos <b>[ S ]</b>.
+              </p>
+              <p><b>[ ; ]:</b> O termino da declaração dos [ options ].</p>
+            </i>
+            <div class="row col-md-5">
+              <button
+                type="button"
+                class="btn btn-success btn-sm"
+                id="btn-random-derive"
+              >
+                Generate Random Grammar Derive
+              </button>
+            </div>
+            <hr class="m-4" />
+            <div id="random-list" class="d-flex">
+
+            </div>
+            <hr class="m-4" />
+            <div class="col-1">
+              <b>G:</b>
+            </div>
+            <div class="col-4">
+              <input
+                type="text"
+                name="calc"
+                id="input-grammar"
+                class="form-control form-control-sm"
+                placeholder="Coloque a Expressão Aqui"
+              />
+            </div>
+            <div class="col-2">
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                id="btn-derive"
+              >
+                Derive
+              </button>
+            </div>
+          </div> 
+          <div class="row justify-content-center mt-2">
+            <div class="col-1">
+              <b>RESULT:</b>
+            </div>
+            <div class="col-4">
+              <input
+                type="text"
+                name="calc"
+                id="input-result"
+                class="form-control form-control-sm"
+              />
+            </div>
+            <div class="col-2"></div>
+          </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./js/index.js"></script>
+</html>
