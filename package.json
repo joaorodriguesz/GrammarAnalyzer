@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server --baseDir=dist",
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/js/index.js"
+    "start": "concurrently \"npm run watch\" \"npm run server\"",
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
   "homepage": "https://github.com/joaorodriguesz/GrammarAnalyzer#readme",
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1",
+    "lite-server": "^2.6.1"
   }
 }

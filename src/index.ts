@@ -1,7 +1,11 @@
-import { Grammar } from "./Grammar.js";
+import { GrammarAnalyzeController } from "./controllers/grammar-analyze.controller.js";
 
-let grammar = new Grammar();
+let gramarAnalizyController = new GrammarAnalyzeController(
+    document.querySelector("#input-grammar"),
+    document.querySelector("#btn-derive"),
+    document.querySelector("#input-result"),
+    document.querySelector("#btn-random-derive")
+);
 
-// grammar.addProduction("S", ["aSb", "ab"]);
-// grammar.derive("S");
-console.log(grammar.generateRandomOptions(3));
+gramarAnalizyController.onClickDeriveListner();
+gramarAnalizyController.onClickRandomDeriveListner();
